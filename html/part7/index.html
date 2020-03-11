@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>HTMLの練習</title>
+</head>
+<body>
+  <form method="POST" action="#">
+    <fieldset>
+      <legend>IDとパスワード</legend>
+      <label for="name">ID</label><input type="text" name="name" id="name"><br>
+      <label for="pass">Password</label><input type="password" name="pass" id="pass"><br>
+    </fieldset>
+    <fieldset>
+      <legend>性別</legend>
+      <input type="radio" name="gender" value="male" id="male"><label for="male">男性</label><br>
+      <input type="radio" name="gender" value="female" id="female"><label for="female">女性</label><br>
+    </fieldset>
+    <fieldset>
+      <legend>好きな音楽</legend>
+      <input type="checkbox" name="music" value="jazz">Jazz
+      <input type="checkbox" name="music" value="pops">Pops
+      <input type="checkbox" name="music" value="rock">Rock
+      <button>何も起こらないボタン</button>
+    </fieldset>
+    <fieldset>
+      <legend>住所</legend>
+      <select name="address">
+        <optgroup label="関東">
+          <option value="tokyo">東京</option>
+          <option value="chiba">千葉</option>
+          <option value="saitama">埼玉</option>
+        </optgroup>
+        <optgroup label="関西">
+          <option value="osaka">大阪</option>
+          <option value="hyogo">兵庫</option>
+          <option value="kyoto">京都</option>
+        </optgroup>
+      </select>
+      <textarea name="address2" ></textarea>
+    </fieldset>
+    <input type="submit" value="送信">
+  </form>
+</body>
+</html>
